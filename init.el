@@ -18,7 +18,6 @@
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
 ;; Cython
-;;(autoload 'cython-mode "cython-mode.el" "Major mode Cython" , t)
 (require 'cython-mode)
 (add-to-list 'auto-mode-alist '("\\.pyx\\'" . cython-mode))
 (add-to-list 'auto-mode-alist '("\\.pxd\\'" . cython-mode))
