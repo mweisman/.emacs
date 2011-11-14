@@ -56,7 +56,8 @@
         (process-send-string proc text)
         (process-send-eof proc))))
 (if (eq system-type 'darwin)
-  (setq interprogram-cut-function 'paste-to-osx)
+  (setq interprogram-cut-function 'paste-to-osx))
+(if (eq system-type 'darwin)
   (setq interprogram-paste-function 'copy-from-osx))
 
 ;; turn off menu bars at terminal and tool bars in gui
